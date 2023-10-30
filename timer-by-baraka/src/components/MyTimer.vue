@@ -1,10 +1,13 @@
 <template>
 <div>
-    <a class="u-link-white" href="#" @click="toggleTimer">
-    {{ time }}
-    </a><br>
-    <a class="play-btn" href="#">{{ time/60 }}</a>
-
+    <div id="clock">
+        <div id="hours">{{ Math.round((time/60)/60) }} H</div>
+        <div>:</div>
+        <div id="minutes">{{ Math.round(time/60) }} M</div>
+        <div>:</div>
+        <div id="seconds">{{ time }} S</div><br>
+    </div>
+    <a class="play-btn" href="#" @click="toggleTimer"></a>
 </div>
 </template>
 
@@ -124,4 +127,14 @@ body {
 
   }
 }
+#clock {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+        }
+        #clock > div {
+            /* margin: 0 10px; */
+            font-size: 3rem;
+        }
 </style>
