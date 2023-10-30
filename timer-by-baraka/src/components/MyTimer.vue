@@ -3,7 +3,7 @@
     <div id="clock">
         <div id="hours">{{ Math.floor((time/60)/60) }} HEURE</div>
         <div>:</div>
-        <div id="minutes">{{ Math.floor(time/60) }} MINUT</div>
+        <div id="minutes">{{ Math.floor(time/60) }} MINUTE</div>
         <div>:</div>
         <div id="seconds">{{ time }} S</div><br>
     </div>
