@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <img alt="Tiki" src="./assets/tiki.png">
     <MyTimer></MyTimer>
   </div>
 </template>
