@@ -1,11 +1,11 @@
 <template>
 <div>
     <div id="clock">
-        <div id="hours">{{ Math.floor((time/60)/60) }} HEURE</div>
+        <div id="hours">{{ Math.floor((time/60)/60) }} H</div>
         <div>:</div>
-        <div id="minutes">{{ Math.floor(time/60) }} MINUTE</div>
+        <div id="minutes">{{ Math.floor(time/60) }} M</div>
         <div>:</div>
-        <div id="seconds">{{ time }} SECONDE</div><br>
+        <div id="seconds">{{ time }} S</div><br>
     </div>
     <a class="play-btn" href="#" @click="toggleTimer"></a>
 </div>
