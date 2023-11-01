@@ -5,7 +5,7 @@
         <div>:</div>
         <div id="minutes">{{ Math.floor(time/60) }} M</div>
         <div>:</div>
-        <div id="seconds">{{ time }} S.</div><br>
+        <div id="seconds">{{ time }} S</div><br>
     </div>
     <a class="play-btn" href="#" @click="toggleTimer"></a>
 </div>
