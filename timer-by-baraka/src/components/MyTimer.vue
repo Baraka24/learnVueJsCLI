@@ -1,7 +1,7 @@
 <template>
 <div>
     <div id="clock">
-        <div id="hours">{{ Math.floor((time/60)/60) }} H</div>
+        <div id="hours">{{ Math.floor((time/60)/60) }} H...</div>
         <div>:</div>
         <div id="minutes">{{ Math.floor(time/60) }} M</div>
         <div>:</div>
