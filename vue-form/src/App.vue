@@ -1,8 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <VueForm>
-
-  </VueForm>
+  <VueForm />
 </template>
 
 <script>
@@ -13,6 +11,15 @@ export default {
   name: 'App',
   components: {
     VueForm
+  },
+  data() {
+    return {
+      itemName: null,
+      itemNumber: null,
+      shoppingList: [
+        {name: 'biscuits', number: 9}
+      ]
+    }
   }
 }
 </script>
