@@ -17,7 +17,9 @@
 export default {
     data() {
         return {
-            shoppingList : []
+            shoppingList : [],
+            itemName: null,
+            itemNumber: null
         }
     },
     methods: {
