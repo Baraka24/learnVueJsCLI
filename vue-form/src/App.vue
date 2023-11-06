@@ -14,8 +14,7 @@ export default {
   },
   data() {
     return {
-      itemName: null,
-      itemNumber: null,
+
     }
   }
 }
