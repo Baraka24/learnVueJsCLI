@@ -15,6 +15,11 @@
 
 <script>
 export default {
+    data() {
+        return {
+            shoppingList : []
+        }
+    },
     methods: {
         addItem() {
             let item = {
@@ -22,8 +27,8 @@ export default {
                 Number: this.itemNumber
             }
             this.shoppingList.push(item);
-            this.itemName = null
-            this.itemNumber = null
+            /* this.itemName = null
+            this.itemNumber = null */
         }
     }
 }

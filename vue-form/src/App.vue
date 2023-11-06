@@ -16,9 +16,6 @@ export default {
     return {
       itemName: null,
       itemNumber: null,
-      shoppingList: [
-        {name: 'biscuits', number: 9}
-      ]
     }
   }
 }
