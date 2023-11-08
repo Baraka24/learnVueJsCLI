@@ -12,6 +12,7 @@
         <label for="al">Algoritms</label>
         <input v-model="tutorials" type="checkbox" value="Machine Learning" name="ml">
         <label for="ml">Machine Learning</label>
+        <p>Tutorials: {{ tutorials }}</p>
     </div>
 </template>
 
