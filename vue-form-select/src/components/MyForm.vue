@@ -7,6 +7,15 @@
         <option value="Python">Python</option>
         <option value="Javascript">Javascript</option>
     </select>
+    <br><br>
+    Data Structure : {{ category }}
+      <br />
+    <select v-model="category">
+        <option value="Array">Array</option>
+        <option value="Queue">Queue</option>
+        <option value="Priority Queue">Priority Queue</option>
+        <option value="Linked List">Linked List</option>
+    </select>
 </template>
 
 <script>
