@@ -13,13 +13,17 @@
 
 <script>
 export default {
-  methods: {
-    redirect() {},
-    back() {
-      this.route.go(-1)
+ /*  methods: {
+    redirect() {
+      this.$route.push({ name: 'Home'})
     },
-    forward() {}
-  }
+    back() {
+      this.$route.go(-1)
+    },
+    forward() {
+      this.$route.go(1)
+    }
+  } */ //I have to work on them all in its good way
 }
 </script>
 
