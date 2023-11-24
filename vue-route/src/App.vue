@@ -3,13 +3,25 @@
     <router-link to="/">Home</router-link> |
     <router-link :to="{ name: 'about' }">About</router-link>
     <div>
-      <button class="btn success">Go back</button>&nbsp;
-      <button class="btn info">Info</button>&nbsp;
-      <button class="btn warning">Go forward</button>
+      <button class="btn success" @click="back">Go back</button>&nbsp;
+      <button class="btn info" @click="redirect">Redirect</button>&nbsp;
+      <button class="btn warning" @click="forward">Go forward</button>
     </div>
   </nav>
   <router-view/>
 </template>
+
+<script>
+export default {
+  methods: {
+    redirect() {},
+    back() {
+      this.route.go(-1)
+    },
+    forward() {}
+  }
+}
+</script>
 
 <style>
 #app {
