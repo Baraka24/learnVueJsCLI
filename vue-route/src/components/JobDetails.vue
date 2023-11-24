@@ -1,7 +1,8 @@
 <template>
     <div class="alert">
         <hr>
-      <strong>xxxx</strong> Job.
+      <!-- <strong>xxxx job id is {{  $route.params.id }} </strong> Job. -->
+      <strong>xxxx job id is {{  id }} </strong> Job.
       <hr>
       <p>Details</p>
     </div>
@@ -10,12 +11,10 @@
   <script>
   export default {
     name: 'JobDetails',
-    props: {
-      msg: String
-    },
+    props: ['id'],//do not work as expected I have to come back here
     data() {
       return {
-        
+        id: this.$route.params.id
       }
     }
   }
