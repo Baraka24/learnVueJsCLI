@@ -1,13 +1,15 @@
 <template>
-    <div class="alert" v-for="job in jobs" :key="job.id">
-      <strong>{{job.title}}</strong> Job.
+    <div class="alert">
+        <hr>
+      <strong>xxxx</strong> Job.
       <hr>
+      <p>Details</p>
     </div>
   </template>
   
   <script>
   export default {
-    name: 'HelloWorld',
+    name: 'JobDetails',
     props: {
       msg: String
     },
@@ -18,3 +20,10 @@
     }
   }
   </script>
+<style>
+.alert {
+  padding: 20px;
+  background-color: #0c0c3b;
+  color: white;
+}
+</style>
