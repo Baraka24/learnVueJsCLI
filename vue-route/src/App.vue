@@ -2,6 +2,11 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link :to="{ name: 'about' }">About</router-link>
+    <div>
+      <button class="btn success">Go back</button>&nbsp;
+      <button class="btn info">Info</button>&nbsp;
+      <button class="btn warning">Go forward</button>
+    </div>
   </nav>
   <router-view/>
 </template>
@@ -26,5 +31,21 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+.success {background-color: #04AA6D;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
 }
 </style>
