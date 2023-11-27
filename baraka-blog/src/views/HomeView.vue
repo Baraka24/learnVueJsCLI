@@ -1,7 +1,10 @@
 <template>
   <div class="home">
-    <p ref="p">Hello, Her name is {{ name }} and she is {{ age }} years old.</p>
+    <!-- <p ref="p">Hello, Her name is {{ name }} and she is {{ age }} years old.</p> -->
+    <p >Hello, Her name is {{ name }} and she is {{ age }} years old.</p>
     <button @click="handleClick">Click me</button>
+    <button @click="age++">Add 1 to age</button>
+    <input type="text" v-model="name">
   </div>
 </template>
 
@@ -21,17 +24,20 @@ export default {
   } */
   setup () {
 
-    const p = ref(null)
+    /* const p = ref(null) */
 
-    let name = 'Benedicte'
-    let age = 18
+    const name = ref('Benedicte')
+    const age = ref(18)
 
     const handleClick = () => {
-      console.log(p, p.value)
+      /* console.log(p, p.value)
       p.value.classList.add("test")
-      p.value.textContent = "Hello world"
+      p.value.textContent = "Hello world" */
+      name.value = 'Zed'
+      age.value = 25
     }
-    return {name, age, handleClick, p}
+    /* return {name, age, handleClick, p} */
+    return {name, age, handleClick}
   }
 }
 </script>
