@@ -5,7 +5,8 @@
     <button @click="handleClick">Click me</button>
     <button @click="age++">Add 1 to age</button>
     <input type="text" v-model="name"> -->
-
+    <input type="text" v-model="search">
+    <p>Search name: <b>{{ search }}</b></p>
     <p v-for="name in names" key="name">{{ name }}</p>
   </div>
 </template>
@@ -45,10 +46,13 @@ export default {
       return "Baraka"
     })
     return { name } */
+    const search = ref('')
 
     const names = ref(['Baraka', 'Boss', 'Bruno', 'Josaphat', 'Domeshow', 'Rodriguez', 'Merci'])
 
-    return { names }
+    //const matchingNames = computed()
+
+    return { names, search }
   }
 }
 </script>
