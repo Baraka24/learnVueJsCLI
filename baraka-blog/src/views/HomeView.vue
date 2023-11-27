@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <p>Hello, Her name is {{ name }} and she is {{ age }} years old.</p>
+    <button @click="handleClick">Click me</button>
   </div>
 </template>
 
@@ -20,7 +21,11 @@ export default {
   setup () {
     let name = 'Benedicte'
     let age = 18
-    return {name, age}
+
+    const handleClick = () => {
+      console.log("You clicked me")
+    }
+    return {name, age, handleClick}
   }
 }
 </script>
